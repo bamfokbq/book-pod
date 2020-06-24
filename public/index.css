@@ -7,8 +7,16 @@ html {
     font-size: 62.5%
 }
 
+:root {
+    --primary-color: #ad0e8d;
+    --secondary-color: #7d00d1;
+}
+
 body {
     background-color: rgb(219, 241, 253);
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+    font-family: 'Noto Sans JP',
+        sans-serif;
 
 }
 

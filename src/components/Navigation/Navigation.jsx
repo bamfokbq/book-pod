@@ -1,9 +1,12 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+import style from './Navigation.module.css'
 
 const Navigation = () => {
   return (
-    <div>
+    <div className={style.navigation}>
+      <h1 className={style.logo}>BOOK-POD</h1>
       <ul>
         <li>
           <Link to='/'>Home</Link>
@@ -15,16 +18,6 @@ const Navigation = () => {
           <Link to='/bible-verse'>Bible Verse</Link>
         </li>
       </ul>
-
-      <Switch>
-        <Route exact path='/'>
-          Home component
-        </Route>
-        <Route path='/quotes'>Quotes component</Route>
-        <Route exact path='/bible-verse'>
-          Bible Verse component
-        </Route>
-      </Switch>
     </div>
   );
 };
