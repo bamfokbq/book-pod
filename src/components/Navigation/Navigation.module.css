@@ -5,10 +5,15 @@
     justify-content: space-around;
     align-items: center;
     padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.logo {
-    font-size: clamp(2rem, 2.5vw, 4rem);
+
+.logo a {
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 900;
+    outline: none;
+    text-decoration: none;
     background-image: linear-gradient(0.25turn, var(--primary-color), var(--secondary-color));
     background-clip: text;
     -webkit-background-clip: text;
